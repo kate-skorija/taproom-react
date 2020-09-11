@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 function Keg(props){
 
-  function handlePintsEdit(event) {
-    if (event.target.pintsRemaining.value > 0) {
-      props.whenPintSold({pintsRemaining: (event.target.pintsRemaining.value - 1), id: event.target.id.value});
-    }
-  }
+  // function handlePintsEdit(event) {
+  //   if (event.target.pintsRemaining.value > 0) {
+  //     props.whenPintSold({pintsRemaining: (event.target.pintsRemaining.value - 1), id: event.target.id.value});
+  //   }
+  // }
 
   return (
     <React.Fragment>
@@ -17,9 +17,9 @@ function Keg(props){
         <p>{props.price}</p>
         <p>{props.alcoholContent}</p>
         <p>{props.pintsRemaining}</p>
-        <hr />
       </div>
-      <button onClick = { () => handlePintsEdit}>Pint Sold!</button>
+      <button onClick = { () => props.whenPintSold(props.id)}>Pint Sold!</button>
+      <hr />
     </React.Fragment>
   );
 }
