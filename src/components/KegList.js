@@ -9,21 +9,17 @@ function KegList(props) {
 
   return (
     <React.Fragment>
-      <hr/>
       {props.kegList.map((keg) => 
         <Keg 
           whenKegClicked = { props.onKegSelection }
           whenPintSold = { props.onPintSoldClick }
           name={keg.name}
           brand={keg.brand}
-          // price={keg.price}
-          // alcoholContent={keg.alcoholContent}
           pintsRemaining={keg.pintsRemaining}
           id={keg.id}
           key={keg.id}
           />
       )} 
-      {/* <button onClick = {() => editPints(props.keg.pintsRemaining)}></button> */}
     </React.Fragment>
   );
 }

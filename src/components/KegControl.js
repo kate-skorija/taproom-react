@@ -4,6 +4,7 @@ import KegList from './KegList';
 import KegDetail from './KegDetail';
 
 class KegControl extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -19,10 +20,11 @@ class KegControl extends React.Component {
         formVisibleOnPage: false,
         selectedKeg: null
       });
-    }
+    } else {
     this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
     }));
+    }
   }
 
   handleAddingNewKegToList = (newKeg) => {
@@ -32,27 +34,17 @@ class KegControl extends React.Component {
 
   handleChangingSelectedKeg = (id) => {
     const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
-    this.setState({selectedKeg: selectedKeg});
+    this.setState({selectedKeg: selectedKeg, formVisibleOnPage: false});
   }
 
   handlePintSold = (id) => {
-    console.log("pints sold reached!")
     const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
     if (selectedKeg.pintsRemaining > 0){
       selectedKeg.pintsRemaining = (selectedKeg.pintsRemaining - 1);
     }
     this.setState({selectedKeg: selectedKeg});
     this.setState({selectedKeg: null});
-    // const editedMasterKegList = this.state.masterKegList
-    // .filter(keg => keg.id !== this.state.selectedKeg.id)
-  //   // .concat(selectedKeg);
-  // this.setState({
-  //     masterTicketList: editedMasterKegList,
-  //     selectedKeg: null
-  //   });
-
   }
-
 
   render(){
     let currentlyVisibleState = null;

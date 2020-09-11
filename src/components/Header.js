@@ -2,7 +2,11 @@ import React from "react";
 
 function Header(){
   return (
-    <h1>The Fishbowl Tap Room</h1>
+    <React.Fragment>
+      <h1>The Fishbowl</h1>
+      <h2>Historic Tap Room</h2>
+      <hr />
+    </React.Fragment>
   );
 }
 

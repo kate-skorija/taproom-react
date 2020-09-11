@@ -3,12 +3,6 @@ import PropTypes from "prop-types";
 
 function Keg(props){
 
-  // function handlePintsEdit(event) {
-  //   if (event.target.pintsRemaining.value > 0) {
-  //     props.whenPintSold({pintsRemaining: (event.target.pintsRemaining.value - 1), id: event.target.id.value});
-  //   }
-  // }
-
   return (
     <React.Fragment>
       <div onClick = { () => props.whenKegClicked(props.id) }>
@@ -35,5 +29,3 @@ Keg.propTypes = {
 };
 
 export default Keg;
-
-// potentially move pint sold button to keg control? and have a method there that reduces number of pints? might make more sense
