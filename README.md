@@ -6,7 +6,7 @@
 
 ## Description
 
-This week we learned the basics of React, focusing on planning out our applications, implementing simple function and class components, and adding local and shared state. This is an app for a tap room, where a user can see all kegs available, view a kegs details, add a new keg, and update an existing keg. Users can also keep track of how many pints of a keg are sold. 
+This week we learned the basics of React, focusing on planning out our applications, implementing simple function and class components, and adding local and shared state. This is an app for a tap room, where a user can see all kegs available, view a kegs details, and add a new keg. Users can also keep track of how many pints of a keg are sold. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
