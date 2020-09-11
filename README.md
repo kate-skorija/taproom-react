@@ -1,18 +1,22 @@
 # Tap Room 
 
-#### _React Fundamentals Code Review for Epicodus, 09.11.2020_
+## _React Fundamentals Code Review for Epicodus, 09.11.2020_
+<br>
 
 ### By Kate Skorija
+<br>
 
 ## Description
 
-This week we learned the basics of React, focusing on planning out our applications, implementing simple function and class components, and adding local and shared state. This is an app for a tap room, where a user can see all kegs available, view a kegs details, and add a new keg. Users can also keep track of how many pints of a keg are sold. 
+This week we learned the basics of React, focusing on planning out our applications, implementing simple function and class components, and adding local and shared state. This is an app for a tap room, where a user can see all kegs available, view a kegs detail's, add a new keg, delete a keg, and update a keg's information. Users can also keep track of how many pints of a keg are sold. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br><br>
 
 ## Component Diagram
 
 ![Component Diagram](./public/taproom.png)
+<br><br>
 
 ## User Stories
 
@@ -20,7 +24,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 *  As a user, I want to submit a form to add a new keg to a list.
 *  As a user, I want to be able to click on a keg to see its detail page.
 *  As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
-*  As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. 
+*  As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This number should not go below zero.
+<br><br>
+
+## Known Bugs
+
+The update functionality does not work at this time.  It will not update the selected keg. 
+<br><br>
+
+## Support and Contact Details
+
+If there are any issues or questions, please reach out to me through [my GitHub account](https://github.com/kate-skorija).
+<br><br>
+
+## Technologies Used
+
+*  [Visual Studio Code](https://code.visualstudio.com/)
+*  [Markdown](https://daringfireball.net/projects/markdown/)
+*  [React](https://reactjs.org/)
+<br><br>
 
 ## Available Scripts
 
@@ -33,11 +55,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -65,43 +82,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-## Known Bugs
-
-There are no known bugs at this time.
-
-## Support and Contact Details
-
-If there are any issues or questions, please reach out to me through [my GitHub account](https://github.com/kate-skorija).
-
-## Technologies Used
-
-*  [Visual Studio Code](https://code.visualstudio.com/)
-*  [Markdown](https://daringfireball.net/projects/markdown/)
-*  [React](https://reactjs.org/)
 
 ### License
 
