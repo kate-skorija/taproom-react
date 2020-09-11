@@ -14,23 +14,23 @@ function NewKegForm(props){
     <React.Fragment>
       <form onSubmit={handleNewKegFormSubmission}>
         <input 
-        type = 'text'
-        name = 'name'
-        placeholder = 'Name of Beer'
+        type='text'
+        name='name'
+        placeholder='Name of Beer'
+        />
+        <input 
+        type='text'
+        name='brand'
+        placeholder='Brand'
         />
         <input 
         type = 'text'
-        brand = 'brand'
-        placeholder = 'Brand'
-        />
-        <input 
-        type = 'text'
-        price = 'price'
+        name= 'price'
         placeholder = 'Price per Pint'
         />
         <input 
         type = 'text'
-        alcoholContent = 'alcoholContent'
+        name='alcoholContent'
         placeholder = 'ABV%'
         />
         {/* <input 
