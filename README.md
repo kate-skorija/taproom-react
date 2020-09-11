@@ -6,7 +6,7 @@
 
 ## Description
 
-This week we learned the basics of React, focusing on planning out our applications, and implementing simple functional and class components. This is an app for a tap room, where a user can see all kegs available, view a kegs details, add a new keg, and update an existing keg. Users can also keep track of how many pints of a keg are sold. 
+This week we learned the basics of React, focusing on planning out our applications, implementing simple function and class components, and adding local and shared state. This is an app for a tap room, where a user can see all kegs available, view a kegs details, add a new keg, and update an existing keg. Users can also keep track of how many pints of a keg are sold. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -88,3 +88,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Known Bugs
+
+There are no known bugs at this time.
+
+## Support and Contact Details
+
+If there are any issues or questions, please reach out to me through [my GitHub account](https://github.com/kate-skorija).
+
+## Technologies Used
+
+*  [Visual Studio Code](https://code.visualstudio.com/)
+*  [Markdown](https://daringfireball.net/projects/markdown/)
+*  [React](https://reactjs.org/)
+
+### License
+
+*This project uses the following license: [MIT](https://opensource.org/licenses/MIT)*
+
+Copyright (c) 2020 **_Kate Skorija_** 
