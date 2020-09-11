@@ -8,21 +8,22 @@ import PropTypes from "prop-types";
 function KegList(props) { 
   return (
     <React.Fragment>
-      {props.kegList.map((keg, index) => 
+      <hr/>
+      {props.kegList.map((keg) => 
         <Keg name={keg.name}
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}
           pintsRemaining={keg.pintsRemaining}
-          key={index} />
+          id={keg.id}
+          key={keg.id} />
       )} 
     </React.Fragment>
   );
 }
 
-// Add propTypes for ticketList.
-// KegList.propTypes = {
-//   kegList: PropTypes.array
-// };
+KegList.propTypes = {
+  kegList: PropTypes.array
+};
 
 export default KegList;
