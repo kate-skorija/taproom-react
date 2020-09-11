@@ -1,13 +1,15 @@
 import React from "react";
+import Keg from "./Keg.js";
 import { v4 } from 'uuid';
 
-function NewKegForm(props){
+function NewKegForm(){
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
     console.log(event.target.name.value);
     console.log(event.target.brand.value);
     console.log(event.target.price.value);
+    console.log(event.target.alcoholContent.value);
   }
 
   return (
@@ -16,31 +18,32 @@ function NewKegForm(props){
         <input 
         type = 'text'
         name = 'name'
-        placeHolder = 'Name of Beer'
+        placeholder = 'Name of Beer'
         />
         <input 
         type = 'text'
         brand = 'brand'
-        placeHolder = 'Brand'
+        placeholder = 'Brand'
         />
         <input 
         type = 'text'
         price = 'price'
-        placeHolder = 'Price per Pint'
+        placeholder = 'Price per Pint'
         />
         <input 
         type = 'text'
         alcoholContent = 'alcoholContent'
-        placeHolder = 'ABV%'
+        placeholder = 'ABV%'
         />
         {/* <input 
         type = 'number'
         name = 'pintsRemaining'
         placeHolder = '124'
         /> */}
+        <button type='submit'>Add!</button>
       </form>
     </React.Fragment>
   );
 }
 
-export default NewKegForm
+export default NewKegForm;
