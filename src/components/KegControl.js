@@ -58,7 +58,6 @@ class KegControl extends React.Component {
   }
 
   handleEditClick = () => {
-    console.log("edit reached!");
     this.setState({editing: true});
   }
 
