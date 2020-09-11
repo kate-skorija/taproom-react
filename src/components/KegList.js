@@ -6,6 +6,13 @@ import PropTypes from "prop-types";
 
 
 function KegList(props) { 
+
+  function editPints(pints) {
+    if (pints > 0) {
+      pintsRemaining = pints - 1;
+    }
+  }
+
   return (
     <React.Fragment>
       <hr/>
@@ -16,10 +23,12 @@ function KegList(props) {
           brand={keg.brand}
           // price={keg.price}
           // alcoholContent={keg.alcoholContent}
-          pintsRemaining={props.pintsRemaining}
+          pintsRemaining={keg.pintsRemaining}
           id={keg.id}
-          key={keg.id} />
+          key={keg.id}
+          />
       )} 
+      <button onClick = {() => editPints(props.keg.pintsRemaining)}></button>
     </React.Fragment>
   );
 }

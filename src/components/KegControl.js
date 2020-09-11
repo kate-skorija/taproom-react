@@ -10,6 +10,7 @@ class KegControl extends React.Component {
       formVisibleOnPage: false,
       masterKegList: [],
       selectedKeg: null,
+      editingPints: false
     };
   }
 
@@ -33,6 +34,13 @@ class KegControl extends React.Component {
   handleChangingSelectedKeg = (id) => {
     const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
     this.setState({selectedKeg: selectedKeg});
+  }
+
+  handlePintEdit = (id, pints) => {
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    if (pints > 0 ){
+      this.setState({selectedKegPintsRemaining: selectedKegPintsRemaining - 1})
+    }
   }
 
 
