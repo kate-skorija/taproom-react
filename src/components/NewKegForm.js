@@ -13,8 +13,8 @@ function NewKegForm(props){
   return (
     <React.Fragment>
       <ReusableForm
-      formSubmissionHandler={handleNewKegFormSubmission}
-      buttonText="Add!" />
+        formSubmissionHandler={handleNewKegFormSubmission}
+        buttonText="Add!" />
     </React.Fragment>
   );
 }

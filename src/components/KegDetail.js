@@ -1,5 +1,4 @@
 import React from "react";
-// import Keg from "./Keg";
 import PropTypes from "prop-types";
 
 function KegDetail(props){
@@ -24,4 +23,5 @@ KegDetail.propTypes = {
   onClickingDelete: PropTypes.func,
   onClickingEdit: PropTypes.func
 };
+
 export default KegDetail;
