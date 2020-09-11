@@ -1,5 +1,5 @@
 import React from "react";
-import Keg from "./Keg";
+// import Keg from "./Keg";
 import PropTypes from "prop-types";
 
 function KegDetail(props){
@@ -10,7 +10,7 @@ function KegDetail(props){
       <h2>{props.keg.name} - {props.keg.brand}</h2>
       <p>Price: {props.keg.price} per pint</p>
       <p>Alcohol Content: {props.keg.alcoholContent}</p>
-      {/* <p>Pints Remaining: {props.pintsRemaining}</p> */}
+      <p>Pints Remaining: {props.keg.pintsRemaining}</p>
       {/* <button onClick={ props.onPintSold }>Pint Sold</button> */}
       <hr/>
     </React.Fragment>
@@ -23,9 +23,3 @@ KegDetail.propTypes = {
   // pintsRemaining: PropTypes.number
 };
 export default KegDetail;
-
-
-
-
-  
-

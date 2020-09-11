@@ -7,18 +7,13 @@ import PropTypes from "prop-types";
 
 function KegList(props) { 
 
-  function editPints(pints) {
-    if (pints > 0) {
-      pintsRemaining = pints - 1;
-    }
-  }
-
   return (
     <React.Fragment>
       <hr/>
       {props.kegList.map((keg) => 
         <Keg 
           whenKegClicked = { props.onKegSelection }
+          whenPintSold = { props.onPintSoldClick }
           name={keg.name}
           brand={keg.brand}
           // price={keg.price}
@@ -28,7 +23,7 @@ function KegList(props) {
           key={keg.id}
           />
       )} 
-      <button onClick = {() => editPints(props.keg.pintsRemaining)}></button>
+      {/* <button onClick = {() => editPints(props.keg.pintsRemaining)}></button> */}
     </React.Fragment>
   );
 }
@@ -36,6 +31,7 @@ function KegList(props) {
 KegList.propTypes = {
   kegList: PropTypes.array,
   onKegSelection: PropTypes.func,
+  onPintSoldClick: PropTypes.func,
 };
 
 export default KegList;

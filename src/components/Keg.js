@@ -2,6 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Keg(props){
+
+  function handlePintsEdit(event) {
+    if (event.target.pintsRemaining.value > 0) {
+      props.whenPintSold({pintsRemaining: (event.target.pintsRemaining.value - 1), id: event.target.id.value});
+    }
+  }
+
   return (
     <React.Fragment>
       <div onClick = { () => props.whenKegClicked(props.id) }>
@@ -12,6 +19,7 @@ function Keg(props){
         <p>{props.pintsRemaining}</p>
         <hr />
       </div>
+      <button onClick = { () => handlePintsEdit}>Pint Sold!</button>
     </React.Fragment>
   );
 }
@@ -22,7 +30,8 @@ Keg.propTypes = {
   price: PropTypes.string,
   alcoholContent: PropTypes.string,
   pintsRemaining: PropTypes.number,
-  whenKegClicked: PropTypes.func
+  whenKegClicked: PropTypes.func,
+  whenPintSold: PropTypes.func
 };
 
 export default Keg;
