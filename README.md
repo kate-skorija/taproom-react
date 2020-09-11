@@ -1,4 +1,26 @@
+# Tap Room 
+
+#### _React Fundamentals Code Review for Epicodus, 09.11.2020_
+
+### By Kate Skorija
+
+## Description
+
+This week we learned the basics of React, focusing on planning out our applications, and implementing simple functional and class components. This is an app for a tap room, where a user can see all kegs available, view a kegs details, add a new keg, and update an existing keg. Users can also keep track of how many pints of a keg are sold. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Component Diagram
+
+![Component Diagram](./public/taproom.png)
+
+## User Stories
+
+*  As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price, alcoholContent, and pints remaining.
+*  As a user, I want to submit a form to add a new keg to a list.
+*  As a user, I want to be able to click on a keg to see its detail page.
+*  As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
+*  As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. 
 
 ## Available Scripts
 
