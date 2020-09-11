@@ -62,11 +62,11 @@ class KegControl extends React.Component {
   }
 
   handleEditingKeg = (kegToEdit) => {
-    const editiedMasterKegList = this.state.masterKegList
+    const editedMasterKegList = this.state.masterKegList
       .filter(keg => keg.id !== this.state.selectedKeg.id)
       .concat(kegToEdit);
       this.setState({
-        masterKegList: editiedMasterKegList,
+        masterKegList: editedMasterKegList,
         editing: false,
         selectedTicket: null
       })
