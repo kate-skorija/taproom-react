@@ -45,7 +45,6 @@ class KegControl extends React.Component {
     if (selectedKeg.pintsRemaining > 0){
       selectedKeg.pintsRemaining = (selectedKeg.pintsRemaining - 1);
     }
-    this.setState({selectedKeg: selectedKeg});
     this.setState({selectedKeg: null});
   }
 
