@@ -45,7 +45,10 @@ class KegControl extends React.Component {
     if (selectedKeg.pintsRemaining > 0){
       selectedKeg.pintsRemaining = (selectedKeg.pintsRemaining - 1);
     }
-    this.setState({selectedKeg: null});
+    const editedKegList = this.state.masterKegList
+      .filter(keg => keg.id !== id)
+      .concat(selectedKeg);
+    this.setState({masterKegList: editedKegList, selectedKeg: null});
   }
 
   handleDeletingKeg = (id) => {
